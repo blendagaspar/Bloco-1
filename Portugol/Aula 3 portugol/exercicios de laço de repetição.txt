@@ -1,0 +1,258 @@
+blenda gaspar 
+turma 25
+data= 27/05/2021
+
+
+
+EX: 1 do laço para
+
+programa
+{
+//Blenda Gaspar
+//25/05/2021
+//turma25
+//exercicio 1- laço de repetição para	
+	funcao inicio()
+	{
+	
+        real sal, soma_sal=0.0,  soma_numfilhos=0.0, med_sal, med_filhos ,maiorsal=0.0, perc_100
+        real cont100=0.0
+        inteiro nf, hab=3 , x
+
+     
+        
+        para ( x=1; x<=hab ; x++)
+        {
+           escreva("digite o salário do cidadão:")
+           leia(sal)
+           
+           escreva("digite o número de filhos:")
+           leia(nf)
+
+        	 soma_sal = soma_sal + sal
+        	 soma_numfilhos = soma_numfilhos + nf
+
+           se(maiorsal < sal)
+        {
+           maiorsal= sal
+
+        }     
+           se (sal <=100)
+        {   
+           cont100++
+        } 
+            
+       }
+
+          med_sal= soma_sal/hab
+          escreva("A media de salários:", med_sal)
+          med_filhos= soma_numfilhos/hab
+          escreva("\nA media de filhos :", med_filhos)
+          escreva("\nMaior salário:", maiorsal )
+          perc_100=(cont100*100)/hab
+          escreva("\nPercentagem de pessoas que ganham até R$100:", perc_100)
+          
+
+	}
+}
+
+
+EX: 2 DO LAÇO ENQUANTO
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+        inteiro numero
+
+        escreva("digite um número:")
+        leia(numero)
+
+
+        escreva(numero)
+
+        enquanto( numero <=200) // 200 pk precisa ir até 135
+         {
+        	numero = numero * 3
+        	se(numero>100)
+        	{
+        		
+           escreva(" ", numero)
+        		
+          }
+          senao
+          {
+          	escreva("," , numero)
+          }
+        
+        
+          }
+
+	}
+}
+
+
+
+EX1: EXERCICIO 1 DO FAÇA ENQUANTO ( ESTÁ INACABADO , tive muitas dificuldades, parei somente 
+para entregar, mas vou estudar mais sobre os laços de repetição.
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+
+       inteiro numero=233
+
+
+       faca{
+       	  se(numero>=200 e numero <=300)
+       	  {
+       	  	numero=numero + 5
+       	
+       	  }
+       	  senao
+       	  {
+       	  	numero= numero + 5
+       	  	
+       	  }
+       	
+       	  se(numero>456)
+       	  {
+       	  	escreva("\nnúmero:", numero )
+
+       	  }
+       	  enquanto(numero <= 456)
+       			
+	   }
+}
+
+
+EX2: exercicio 2 do para 
+
+programa
+{
+/*blenda gaspar
+
+turma 25
+27/05/2021 */
+
+    
+	funcao inicio()
+	{
+
+
+      inteiro soma=0, numero=0
+
+
+           para(numero=1 ; numero <=500; numero++ )
+
+           {
+           	se( numero%3 ==0)
+           	{
+           	
+           	soma=soma + numero
+           	
+           	}
+           }
+
+
+           escreva("\n soma dos números multiplos de 3 de 1 a 500 é:" , soma)
+
+		
+	}
+}
+
+
+EX 2 DO FACA... ENQUANTO
+
+programa
+{
+/*blenda gaspar
+
+turma 25
+27/05/2021 */
+
+    
+	funcao inicio()
+	{
+		inteiro soma=0, numero, i=0
+		
+		escreva("digite qualquer número:")
+          leia(numero)
+         	
+         	
+          faca{  
+          	
+          	
+          	i++
+          	soma += i
+		}enquanto( i != numero)
+			
+	escreva ("a soma dos número até   " , numero , "= ", soma)
+	}	
+}
+
+
+EX2: EXERCICIO 2 DO ENQUANTO
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+
+    inteiro soma=0 , total, valor, media, contador=0
+    escreva("insira um valor:")
+    leia(valor)
+
+
+    
+    enquanto(valor > 1)
+    {
+    	 soma= soma + valor
+    	 contador = contador +1
+    	 media= soma/contador
+    	 total= contador
+    	
+    	
+    	 limpa()
+
+    	 escreva ("\n Total acumulativo: ", soma)
+        escreva ("\n Insira um valor: ")
+        leia (valor)
+
+        escreva ("\n A soma dos valores inseridos é: ", soma)
+        escreva ("\n A média da soma é: ", media)
+        escreva ("\n A quantidade de valores acumulados é: ", total)
+    	
+    	
+    	
+    	}
+
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

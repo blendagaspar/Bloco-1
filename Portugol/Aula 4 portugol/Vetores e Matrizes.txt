@@ -1,0 +1,81 @@
+programa
+{
+	//Exemplo - Vetores
+	funcao inicio()
+	{
+	  real minhaNota
+	  real notas[2]
+		
+	  notas[0] = 8.5
+	  minhaNota = notas[0]
+
+	  escreva("A Variavel contém: " + minhaNota)
+	  escreva("O vetor na posição 0 contem: " + notas[0])
+	}
+}
+=======================================
+programa
+{
+	
+	//Vetor - Média das notas
+	funcao inicio()
+	{
+	  real notas[4]
+	  real soma = 0.0, media = 0.0
+
+	  inteiro i
+
+	escreva("Digite às quatro notas do Aluno: \n")
+	
+          para(i=0;i<=3;i++){
+	   leia(notas[i])
+	  }
+	  para(i=0;i<=3;i++){
+	   soma = soma + notas[i]
+	   media = soma / 4
+	 }
+		
+	escreva("A soma das notas: ",soma)
+	escreva("\nA média é: ", media)
+	}
+}
+========================================
+programa
+{
+	//Matriz --> Exemplo - 01
+	funcao inicio()
+	{
+	  inteiro notas[4][4] =	 {{10,20,30,40},
+		 		  {10,20,30,40},
+		                  {10,20,30,40},
+		                  {10,20,30,40}}
+
+	para(inteiro l=0; l<4; l++)
+{
+	   para(inteiro c=0;c<4;c++){
+	       escreva(notas[l][c], ",")}
+	       escreva("\n")
+	}
+    }
+}
+========================================
+programa
+{
+        //Exemplo --> Matriz - 02
+	funcao inicio()
+	{
+	  inteiro notas[2][2]
+
+	  para(inteiro l=0; l<2; l++){
+	     para(inteiro c=0;c<2;c++){
+		leia(notas[l][c])}
+                escreva("\n")
+	  }
+
+	  para(inteiro l=0; l<2; l++){
+	     para(inteiro c=0;c<2;c++){
+	       escreva(notas[l][c], ",")}
+	       escreva("\n")
+	  }
+     }
+}

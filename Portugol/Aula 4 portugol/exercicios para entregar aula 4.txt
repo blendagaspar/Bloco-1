@@ -1,0 +1,239 @@
+
+Blenda Gaspar 
+turma 25
+Aula 4- Vetores e Matrizes 
+
+
+
+
+
+
+
+
+Exercicio 1
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+         real valores[5]
+         inteiro i, maior=0
+
+         escreva("escreva os 5 valores de pontuação:")
+
+         para (i=0; i<=4; i++)
+         {
+         	leia(valores[i])
+
+         }
+
+
+         maior = valores[0]
+         para (i=1; i<=4; i++)
+         {
+        
+         	se( valores[i] > maior)
+         	{
+         		
+         	maior = valores[i]	
+         	}
+         	
+         }
+         escreva("a maior pontuação é :", 	maior )
+	
+	}
+}
+
+===============================================================================
+
+Exercicio 2:
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+
+
+       inteiro vetor[10] , i , media=0.0 , soma = 0.0 
+
+
+       escreva("escreva os 10 valores de pontuação:")
+
+       para (i=0; i<=9; i++)
+         {
+         	leia(vetor[i])
+
+         }
+
+
+        para (i=0; i<=9; i++)
+        {
+        	
+        	soma  = soma + vetor[i]
+        	media= soma/10
+        } 
+      escreva("A soma dos valores do vetor é :",  soma)
+      escreva("\nA media dos valores do vetor é :",  media)
+
+		
+	}
+}
+
+
+Ex 2 correção do professor:
+
+programa
+{
+	
+	inclua biblioteca Util --> util
+	funcao inicio(){
+
+		inteiro lancamento[10]
+		inteiro x, soma=0, maiorpontuacao=0, maior=0
+
+		real medialancamento=0.0
+
+		
+		para(x=0; x<10;x++){
+			escreva("Entre com os lançamentos: ")
+			leia(lancamento[x])
+			//lancamento[x] = util.sorteia(1, 6)
+
+			soma = soma + lancamento[x]
+
+			se(lancamento[x] == 6){
+				maiorpontuacao++
+			}
+			se(maior<lancamento[x]){
+				maior = lancamento[x]
+			}
+		}
+			para(x=0;x<10;x++){
+				se(maior == lancamento[x]){
+					//maiorpontuacao++
+				}
+				escreva("\nLançamento ", x+1,":", lancamento[x])
+			}
+		medialancamento = soma / 10.0
+		
+		escreva("\nA média lançamentos: " + medialancamento)
+		escreva("\nQuantidade da maior pontuação:" + maiorpontuacao +
+				" e o maior lançamento foi de:" + maior)
+	}
+}
+=========================================================================================
+
+Exercicio 3: 
+
+//correção do ´professor
+
+programa
+{
+	funcao inicio(){
+
+
+		inteiro n1[2][3], n2[2][3], m1[2][3], m2[2][3], l, c
+
+		para(l=0; l<2; l++){
+			para(c=0; c<3;c++){
+				escreva("Entre com N1:")
+				leia(n1[l][c]) //10
+				escreva("Entre com N2:")
+				leia(n2[l][c]) //20
+
+				m1[l][c] = n1[l][c] + n2[l][c]
+				m2[l][c] = n1[l][c] - n2[l][c]
+				}
+			}
+			para(l=0;l<2;l++){
+				para(c=0;c<3;c++){
+					escreva("\nMatriz M1: " + m1[l][c])
+					escreva("\nMatriz M2: " + m2[l][c])
+				}
+			}
+		}
+	}
+
+======================================================================================
+
+Exercicio 4:
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+      inteiro matriz[3][3], soma=0.0 , diagonal=0.0
+
+      para(inteiro i=0; i<3; i++)
+      
+     {
+	 para(inteiro j=0; j<3;j++)
+	{
+	 escreva("Entre com N1:")
+      leia(matriz[i][j]) 
+
+	}
+     }
+
+     para(inteiro i=0; i<3; i++)
+      
+     {
+	 para(inteiro j=0; j<3;j++)
+	{
+	  se(i==j)
+	{
+	  diagonal = diagonal + matriz[i][j]  
+	}
+   
+	}
+     }
+      
+        escreva("A soma da matriz diagonal:", diagonal)	
+      	
+
+      para(inteiro i=0; i<3; i++)
+      
+     {
+	 para(inteiro j=0; j<3;j++)
+     {
+       soma = soma + matriz[i][j]
+
+     }
+      
+     }
+    
+      escreva("\nA soma de todos elementos da matriz:" , soma)
+
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
