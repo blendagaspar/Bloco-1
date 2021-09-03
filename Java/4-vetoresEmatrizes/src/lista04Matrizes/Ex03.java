@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Ex03 {
 	/*Vetores e matrizes - Java: 3
-	 *  Autora: Ana Oliveira
 	 *  07/06/21
 	 *  Enunciado: Leia uma matriz 3 x 3, conte e escreva quantos valores maiores que 10 ela possui.*/
 
@@ -16,7 +15,7 @@ public class Ex03 {
 		
 		for(int l = 0; l < 3; l++) {
 			for (int c = 0; c < 3; c++) {
-				System.out.printf("Digite a posiÁ„o[%d][%d] da matriz[3][3]: ", l, c);
+				System.out.printf("Digite a posi√ß√£o[%d][%d] da matriz[3][3]: ", l, c);
 				matriz[l][c] = in.nextDouble();
 				
 				if (matriz[l][c] > 10)
@@ -26,7 +25,7 @@ public class Ex03 {
 		
 		in.close();
 		
-		System.out.println("\nA matriz tem " + maior10 + " valores maiores do que 10.\nEles s„o: ");
+		System.out.println("\nA matriz tem " + maior10 + " valores maiores do que 10.\nEles s√£o: ");
 		
 		for(int l = 0; l < 3; l++) {
 			for (int c = 0; c < 3; c++) {
