@@ -3,13 +3,13 @@ package lista04Matrizes;
 import java.util.*;
 public class Ex02 {
 	/*Vetores e matrizes - Java: 2
-	 *  Autora: Ana Oliveira
+
 	 *  07/06/21
-	 *  Enunciado: 2- Faça um programa que receba 6 números inteiros e mostre: 
-	• Os números pares digitados;  
-	• A soma dos números pares digitados; 
-	• Os números ímpares digitados; 
-	• A quantidade de números ímpares digitados.
+	 *  Enunciado: 2- FaÃ§a um programa que receba 6 nÃºmeros inteiros e mostre: 
+	â€¢ Os nÃºmeros pares digitados;  
+	â€¢ A soma dos nÃºmeros pares digitados; 
+	â€¢ Os nÃºmeros Ã­mpares digitados; 
+	â€¢ A quantidade de nÃºmeros Ã­mpares digitados.
 	 */
 	public static void main(String[] args) {
 		
@@ -38,15 +38,15 @@ public class Ex02 {
 			}
 		}
 		
-		System.out.println("\n\nÍmpares:");
+		System.out.println("\n\nÃmpares:");
 		for (int i = 0; i < 6; i++) {
 			if (vetor[i] % 2 != 0) {
 				System.out.print(vetor[i] + " ");
 			}
 		}
 		
-		System.out.println("\n\nQuantidade de números ímpares digitados: " + quantImpar);
-		System.out.println("Soma dos números pares: " + somaPar);
+		System.out.println("\n\nQuantidade de nÃºmeros Ã­mpares digitados: " + quantImpar);
+		System.out.println("Soma dos nÃºmeros pares: " + somaPar);
 	}
 
 }
