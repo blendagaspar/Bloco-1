@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class Ex04 {
 	/*Vetores e matrizes - Java: 4
-	 *  Autora: Ana Oliveira
+	
 	 *  07/06/21
 	 *  Enunciado: 
-	 4- Faça um programa que leia duas matrizes 2 x 2 com valores reais. Ofereça ao usuário um menu de opções:
+	 4- FaÃ§a um programa que leia duas matrizes 2 x 2 com valores reais. OfereÃ§a ao usuÃ¡rio um menu de opÃ§Ãµes:
 		(1) somar as duas matrizes 
 		(2) subtrair a primeira matriz da segunda 
 		(3) adicionar uma constante as duas matrizes
 		(4) imprimir as matrizes 
-		Nas duas primeiras opções uma terceira matriz 2 x 2 deve ser criada. Na terceira opção o valor 
-		da constante deve ser lido e o resultado da adição da constante deve ser armazenado na própria matriz.*/
+		Nas duas primeiras opÃ§Ãµes uma terceira matriz 2 x 2 deve ser criada. Na terceira opÃ§Ã£o o valor 
+		da constante deve ser lido e o resultado da adiÃ§Ã£o da constante deve ser armazenado na prÃ³pria matriz.*/
 
 	public static void main(String[] args) {
 		
@@ -42,7 +42,7 @@ public class Ex04 {
 		}
 		
 		System.out.println("==================================================================");
-		System.out.println("Escolha uma das opções abaixo: ");
+		System.out.println("Escolha uma das opÃ§Ãµes abaixo: ");
 		System.out.println("DIGITE 1 para somar as matrizes\nDIGITE 2 para subtrair primeira matriz da segunda"
 				+ "\nDIGITE 3 para adicionar uma constante as duas matrizes\nDIGITE 4 para imprimir as matrizes");
 		usuario = in.nextInt();
@@ -70,7 +70,7 @@ public class Ex04 {
 				}
 			}
 			
-			System.out.println("\nMatriz resultante da subtração (m2 - m1): ");
+			System.out.println("\nMatriz resultante da subtraÃ§Ã£o (m2 - m1): ");
 			for(int l=0; l < 2; l++) {
 				for (int c = 0; c < 2; c++) {
 					System.out.printf("\t %.2f \t", mR[l][c]);
@@ -86,7 +86,7 @@ public class Ex04 {
 					m2[l][c] = m2[l][c] + constante;
 				}
 			}
-			System.out.println("\nMatrizes resultantes da adição da constante: ");
+			System.out.println("\nMatrizes resultantes da adiÃ§Ã£o da constante: ");
 			System.out.println("M1:");
 			for(int l=0; l < 2; l++) {
 				for (int c = 0; c < 2; c++) {
@@ -117,7 +117,7 @@ public class Ex04 {
 				System.out.println();
 			}
 		} else {
-			System.out.println("Você digitou uma instrução inválida!");
+			System.out.println("VocÃª digitou uma instruÃ§Ã£o invÃ¡lida!");
 		}
 		
 		in.close();
